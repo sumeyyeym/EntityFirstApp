@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ff344033a391469f9c21b9e8cfe7bfa5" Name="Diagram1">
+        <EntityTypeShape EntityType="NorthwindModel.Category" Width="1.5" PointX="3" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NorthwindModel.CustomerDemographic" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NorthwindModel.Customer" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NorthwindModel.Employee" Width="1.5" PointX="3" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NorthwindModel.Order_Detail" Width="1.5" PointX="7.5" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NorthwindModel.Order" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="NorthwindModel.Product" Width="1.5" PointX="5.25" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NorthwindModel.Region" Width="1.5" PointX="5.75" PointY="7.125" IsExpanded="true" FillColor="Red" />
+        <EntityTypeShape EntityType="NorthwindModel.Shipper" Width="1.5" PointX="3" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NorthwindModel.Supplier" Width="1.5" PointX="3" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NorthwindModel.sysdiagram" Width="1.5" PointX="7.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NorthwindModel.Territory" Width="1.5" PointX="8" PointY="9.875" IsExpanded="true" />
+        <AssociationConnector Association="NorthwindModel.FK_Products_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="NorthwindModel.FK_Orders_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="NorthwindModel.FK_Employees_Employees" ManuallyRouted="false" />
+        <AssociationConnector Association="NorthwindModel.FK_Orders_Employees" ManuallyRouted="true" >
+          <ConnectorPoint PointX="4.5" PointY="11.874705403645834" />
+          <ConnectorPoint PointX="6.1822891666666671" PointY="11.874705403645834" />
+          <ConnectorPoint PointX="6.3489558333333331" PointY="11.874705403645834" />
+          <ConnectorPoint PointX="6.375" PointY="11.874705403645834" />
+          <ConnectorPoint PointX="6.375" PointY="7.5903901855468767" />
+          <ConnectorPoint PointX="5.46875" PointY="7.5903901855468767" />
+          <ConnectorPoint PointX="5.46875" PointY="5.4802050781250031" />
+        </AssociationConnector>
+        <AssociationConnector Association="NorthwindModel.FK_Order_Details_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="NorthwindModel.FK_Order_Details_Products" ManuallyRouted="true" >
+          <ConnectorPoint PointX="6.75" PointY="20.875" />
+          <ConnectorPoint PointX="6.75" PointY="10.477561002604166" />
+          <ConnectorPoint PointX="6.5520833333333339" PointY="10.477561002604166" />
+          <ConnectorPoint PointX="6.5520833333333339" PointY="6.4658209772135411" />
+          <ConnectorPoint PointX="7.59375" PointY="6.4658209772135411" />
+          <ConnectorPoint PointX="7.59375" PointY="4.4898893229166656" />
+        </AssociationConnector>
+        <AssociationConnector Association="NorthwindModel.FK_Orders_Shippers" ManuallyRouted="true" >
+          <ConnectorPoint PointX="4.5" PointY="16.143992513020834" />
+          <ConnectorPoint PointX="6.2656225" PointY="16.143992513020834" />
+          <ConnectorPoint PointX="6.2656225" PointY="8.9992549316406283" />
+          <ConnectorPoint PointX="5.3281225" PointY="8.9992549316406283" />
+          <ConnectorPoint PointX="5.3281225" PointY="5.4802050781250031" />
+        </AssociationConnector>
+        <AssociationConnector Association="NorthwindModel.FK_Products_Suppliers" ManuallyRouted="false" />
+        <AssociationConnector Association="NorthwindModel.FK_Territories_Region" ManuallyRouted="false" />
+        <AssociationConnector Association="NorthwindModel.CustomerCustomerDemo" ManuallyRouted="false" />
+        <AssociationConnector Association="NorthwindModel.EmployeeTerritories" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
